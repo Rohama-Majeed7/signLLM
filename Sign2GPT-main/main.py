@@ -19,7 +19,7 @@ torch.hub.set_dir("/tmp")
 
 def main(_):
     mod = importlib.import_module(CONFIG.value.main_runner, package=None)
-    backend = "nccl"
+    backend = "gloo"
     nproc_per_node = (
         torch.cuda.device_count() if torch.cuda.device_count() > 1 else None
     )
