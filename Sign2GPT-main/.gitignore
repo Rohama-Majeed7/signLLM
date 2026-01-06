@@ -156,7 +156,6 @@ run_submit.sh
 # *.json
 test.py
 
-checkpoints/
 vis_images/
 old/
 *.pkl
