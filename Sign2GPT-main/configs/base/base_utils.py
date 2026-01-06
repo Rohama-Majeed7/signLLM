@@ -2,7 +2,7 @@ from pathlib import Path
 
 
 def get_checkpoint_path(base_name, name):
-    ckpt_path = "/kaggle/working/signLLM/Sign2GPT-main/checkpoints"
+    ckpt_path = "/kaggle/working/signLLM/Sign2GPT-main/dataset"
     return ckpt_path
 
 
