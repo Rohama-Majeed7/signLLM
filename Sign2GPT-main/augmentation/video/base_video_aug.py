@@ -23,14 +23,14 @@ class Transformation(object):
         self.transform_train = A.Compose(
             [
                 A.Rotate(limit=5, p=0.3),
-                A.RandomResizedCrop(
-                    height=224,
-                    width=224,
-                    scale=(0.875, 1),
-                    ratio=(0.9, 1.1),
-                    p=1.0,
-                    always_apply=True,
-                ),
+               A.RandomResizedCrop(
+    size=(224, 224),
+    scale=(0.875, 1),
+    ratio=(0.9, 1.1),
+    p=1.0,
+    always_apply=True,
+),
+
                 A.HorizontalFlip(p=0.5),
                 A.ColorJitter(
                     brightness=0.8 * s,
